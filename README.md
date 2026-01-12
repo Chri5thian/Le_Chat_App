@@ -1,28 +1,45 @@
-# Mistral Chat Tauri Wrapper
+# Le Chat Desktop
 
-A minimal Tauri v2 Rust app that opens the Mistral Chat web experience (https://chat.mistral.ai/chat) in a native shell with quick shortcuts for reload and devtools.
+A lightweight cross-platform desktop app for Mistral AI's Le Chat (https://chat.mistral.ai/chat) built with Tauri v2.
 
-## Prerequisites
-- Rust toolchain (stable)
-- Tauri CLI v2: `cargo install tauri-cli --version ^2 --locked`
-- Linux dependencies for Tauri (WebKitGTK, etc.)
+## Features
+- Native app for Windows, macOS, and Linux
+- Keyboard shortcuts: `Ctrl/Cmd+R` to reload, `Ctrl/Cmd+Shift+I` for DevTools
+- Automatic cross-platform builds via GitHub Actions
 
-## Run in dev
+## Installation
+
+Download the latest release from [Releases](https://github.com/Chri5thian/Le_Chat_App/releases):
+- **Windows**: `.msi` or `.exe`
+- **macOS**: `.dmg` (Intel & Apple Silicon)
+- **Linux**: `.deb` or `.AppImage`
+
+## Development
+
+**Prerequisites:**
+- [Rust](https://rustup.rs/) toolchain
+- Tauri CLI: `cargo install tauri-cli --version ^2 --locked`
+- Linux: `libwebkit2gtk-4.1-dev`, `build-essential`, `libssl-dev`, `libayatana-appindicator3-dev`, `librsvg2-dev`
+
+**Run:**
 ```bash
 cargo tauri dev
 ```
-This will open the window pointed at the hosted Mistral Chat site.
 
-## Build release
+**Build:**
 ```bash
 cargo tauri build
 ```
-Output binaries live under `src-tauri/target/release/`.
 
-## Shortcuts
-- Reload: `Ctrl/Cmd + R`
-- Toggle devtools: `Ctrl/Cmd + Shift + I`
+## Releasing
 
-## Notes
-- Remote content is loaded directly; CSP is disabled in config to avoid blocking the remote app. Tighten this if you host content yourself.
-- If the remote site changes domains/assets, update `APP_URL` in `src-tauri/src/main.rs`.
+Create and push a version tag to trigger automated builds:
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Installers will be created automatically and attached to the GitHub release.
+
+## License
+MIT
