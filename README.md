@@ -6,6 +6,8 @@ A lightweight cross-platform desktop app for Mistral AI's Le Chat (https://chat.
 
 Leading AI platforms like ChatGPT and GitHub Copilot offer dedicated desktop applications that provide a more professional, practical user experience with benefits like local inference support, better system integration, and improved workflows. This project aims to demonstrate the value of a native desktop experience for Le Chat and encourage Mistral AI to develop an official desktop client that meets the same standard.
 
+As a European, I'm also concerned about Europe's growing dependence on US and Chinese AI infrastructure. Supporting and elevating European AI companies like Mistral AI is crucial for technological sovereignty. A world-class desktop application would help Mistral compete more effectively on the global stage and provide a viable alternative to US-dominated platforms.
+
 ## Features
 - Native app for Windows, macOS, and Linux
 - Keyboard shortcuts: `Ctrl/Cmd+R` to reload, `Ctrl/Cmd+Shift+I` for DevTools
