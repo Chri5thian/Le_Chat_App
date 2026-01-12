@@ -61,6 +61,9 @@ jobs:
       - name: Install frontend dependencies
         run: echo "No frontend dependencies needed (using devUrl)"
 
+      - name: Install Tauri CLI
+        run: cargo install tauri-cli
+
       - name: Build Tauri app
         run: cargo tauri build --target ${{ matrix.platform.target }}
 
