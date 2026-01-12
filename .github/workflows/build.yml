@@ -61,6 +61,11 @@ jobs:
       - name: Install frontend dependencies
         run: echo "No frontend dependencies needed (using devUrl)"
 
+      - name: Create dist folder
+        run: |
+          mkdir -p dist
+          echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Le Chat</title></head><body><p>Loading...</p></body></html>' > dist/index.html
+
       - name: Install Tauri CLI
         run: cargo install tauri-cli
 
