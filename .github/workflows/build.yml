@@ -117,6 +117,12 @@ jobs:
         with:
           path: artifacts
 
+      - name: Flatten artifacts (keep only installers)
+        run: |
+          mkdir -p release-files
+          find artifacts -type f \( -name "*.deb" -o -name "*.AppImage" -o -name "*.rpm" -o -name "*.msi" -o -name "*.exe" -o -name "*.dmg" \) -exec cp {} release-files/ \;
+          ls -lah release-files/
+
       - name: Read version from Cargo.toml
         id: version
         run: |
@@ -126,7 +132,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: artifacts/**/*
+          files: release-files/*
           draft: false
           prerelease: false
           generate_release_notes: true
