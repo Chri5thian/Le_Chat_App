@@ -2,6 +2,10 @@
 
 A lightweight cross-platform desktop app for Mistral AI's Le Chat (https://chat.mistral.ai/chat) built with Tauri v2.
 
+## Project Goals
+
+Leading AI platforms like ChatGPT and GitHub Copilot offer dedicated desktop applications that provide a more professional, practical user experience with benefits like local inference support, better system integration, and improved workflows. This project aims to demonstrate the value of a native desktop experience for Le Chat and encourage Mistral AI to develop an official desktop client that meets the same standard.
+
 ## Features
 - Native app for Windows, macOS, and Linux
 - Keyboard shortcuts: `Ctrl/Cmd+R` to reload, `Ctrl/Cmd+Shift+I` for DevTools
