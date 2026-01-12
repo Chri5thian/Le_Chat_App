@@ -36,17 +36,19 @@ fn open_main_window(app: &AppHandle) -> tauri::Result<()> {
                 return true;
             }
             // Allow auth/oauth domains
-            if url_str.contains("auth0.com") 
+            if url_str.contains("auth0.com")
                 || url_str.contains("accounts.google.com")
                 || url_str.contains("login.microsoftonline.com")
-                || url_str.contains("github.com/login") {
+                || url_str.contains("github.com/login")
+            {
                 return true;
             }
             // Allow CDNs and API endpoints
-            if url_str.contains("cloudflare.com") 
+            if url_str.contains("cloudflare.com")
                 || url_str.contains("cloudfront.net")
                 || url_str.starts_with("data:")
-                || url_str.starts_with("blob:") {
+                || url_str.starts_with("blob:")
+            {
                 return true;
             }
             // Open other external links in default browser
@@ -75,17 +77,19 @@ fn open_main_window(app: &AppHandle) -> tauri::Result<()> {
                 return true;
             }
             // Allow auth/oauth domains
-            if url_str.contains("auth0.com") 
+            if url_str.contains("auth0.com")
                 || url_str.contains("accounts.google.com")
                 || url_str.contains("login.microsoftonline.com")
-                || url_str.contains("github.com/login") {
+                || url_str.contains("github.com/login")
+            {
                 return true;
             }
             // Allow CDNs and API endpoints
-            if url_str.contains("cloudflare.com") 
+            if url_str.contains("cloudflare.com")
                 || url_str.contains("cloudfront.net")
                 || url_str.starts_with("data:")
-                || url_str.starts_with("blob:") {
+                || url_str.starts_with("blob:")
+            {
                 return true;
             }
             // Open other external links in default browser
