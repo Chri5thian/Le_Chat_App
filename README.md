@@ -49,4 +49,4 @@ MIT - See [LICENSE](LICENSE) file for details.
 - **Mistral Logo**: The Mistral AI logo used in this application is the property of Mistral AI. This project is not affiliated with, endorsed by, or connected to Mistral AI.
 - **Disclaimer**: This application is a wrapper that loads Mistral's web service. All AI responses and services are provided by Mistral AI.
 
-If you are a Mistral AI representative and have concerns about this project, please open an issue.
+**Note to Mistral AI:** I'd love to collaborate or discuss this project with your team. If you have feedback, concerns, or would like to work together on improving desktop access to Le Chat, please reach out via GitHub Issues or contact me directly.
