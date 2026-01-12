@@ -138,5 +138,6 @@ jobs:
           generate_release_notes: true
           tag_name: v${{ steps.version.outputs.version }}
           name: Le Chat v${{ steps.version.outputs.version }}
+          allow_updates: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
