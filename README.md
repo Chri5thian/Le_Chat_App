@@ -42,4 +42,11 @@ git push origin v1.0.0
 Installers will be created automatically and attached to the GitHub release.
 
 ## License
-MIT
+MIT - See [LICENSE](LICENSE) file for details.
+
+## Attribution & Trademark Notice
+- **Le Chat & Mistral AI**: This is an unofficial third-party desktop wrapper for [Mistral AI's Le Chat](https://chat.mistral.ai).
+- **Mistral Logo**: The Mistral AI logo used in this application is the property of Mistral AI. This project is not affiliated with, endorsed by, or connected to Mistral AI.
+- **Disclaimer**: This application is a wrapper that loads Mistral's web service. All AI responses and services are provided by Mistral AI.
+
+If you are a Mistral AI representative and have concerns about this project, please open an issue.
