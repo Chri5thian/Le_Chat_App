@@ -12,8 +12,10 @@ fn render_icons_from_svg() {
 
     match fs::read(svg_path) {
         Ok(svg_data) => {
-            let mut opt = usvg::Options::default();
-            opt.resources_dir = Some("icons".into());
+            let opt = usvg::Options {
+                resources_dir: Some("icons".into()),
+                ..Default::default()
+            };
 
             match usvg::Tree::from_data(&svg_data, &opt) {
                 Ok(tree) => {
