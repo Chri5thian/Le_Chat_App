@@ -19,7 +19,7 @@ fn open_main_window(app: &AppHandle) -> tauri::Result<()> {
     let url = Url::parse(APP_URL).expect("valid Mistral Chat url");
 
     #[cfg(target_os = "linux")]
-    let window = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url))
+    let _window = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url))
         .title("Le Chat")
         .inner_size(1200.0, 800.0)
         .resizable(true)
@@ -61,7 +61,7 @@ fn open_main_window(app: &AppHandle) -> tauri::Result<()> {
         .build()?;
 
     #[cfg(not(target_os = "linux"))]
-    let window = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url))
+    let _window = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url))
         .title("Le Chat")
         .inner_size(1200.0, 800.0)
         .resizable(true)
