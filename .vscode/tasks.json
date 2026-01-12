@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cargo tauri dev",
+      "type": "shell",
+      "command": "cargo",
+      "args": ["tauri", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "cargo tauri build",
+      "type": "shell",
+      "command": "cargo",
+      "args": ["tauri", "build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
