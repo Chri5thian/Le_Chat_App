@@ -8,7 +8,7 @@ fn main() -> tauri::Result<()> {
     tauri::Builder::default()
         .setup(|app| {
             let handle = app.handle();
-            open_main_window(&handle)?;
+            open_main_window(handle)?;
             Ok(())
         })
         .run(tauri::generate_context!())?;
