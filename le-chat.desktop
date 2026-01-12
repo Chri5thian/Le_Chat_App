@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Le Chat
+Comment=Mistral AI Chat Desktop Application
+Exec=/home/christian/Desktop/Le_Chat_App/target/debug/mistral-chat-wrapper
+Icon=/home/christian/Desktop/Le_Chat_App/src-tauri/icons/icon.png
+Terminal=false
+Categories=Network;Chat;InstantMessaging;
+StartupWMClass=le-chat
+StartupNotify=true
+Keywords=chat;ai;mistral;lechat;
+MimeType=x-scheme-handler/lechat;

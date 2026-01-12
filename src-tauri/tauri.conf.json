@@ -19,6 +19,7 @@
       "icons/32x32.png",
       "icons/128x128.png",
       "icons/128x128@2x.png",
+      "icons/icon.png",
       "icons/icon.icns",
       "icons/icon.ico"
     ],
@@ -36,7 +37,8 @@
     },
     "linux": {
       "deb": {
-        "depends": []
+        "depends": [],
+        "desktopTemplate": "Name=Le Chat\nExec={{app_exec}}\nIcon={{app_icon}}\nType=Application\nCategories=Network;Chat;\nTerminal=false\nStartupWMClass=le-chat"
       }
     }
   }
