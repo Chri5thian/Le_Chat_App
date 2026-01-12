@@ -1,6 +1,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use tauri::{AppHandle, WebviewUrl, WebviewWindowBuilder, Url};
+use tauri::{AppHandle, Url, WebviewUrl, WebviewWindowBuilder};
 
 const APP_URL: &str = "https://chat.mistral.ai/chat";
 

@@ -1,4 +1,3 @@
-
 use std::fs;
 use tiny_skia::Transform;
 
@@ -25,19 +24,19 @@ fn render_icons_from_svg() {
                                 let viewbox = tree.size();
                                 let vb_width = viewbox.width();
                                 let vb_height = viewbox.height();
-                                
+
                                 // Scale to fit within square, maintaining aspect ratio
                                 let scale = (size as f32) / vb_width.max(vb_height);
                                 let scaled_w = vb_width * scale;
                                 let scaled_h = vb_height * scale;
-                                
+
                                 // Center within the square
                                 let offset_x = ((size as f32) - scaled_w) / 2.0;
                                 let offset_y = ((size as f32) - scaled_h) / 2.0;
-                                
+
                                 let transform = Transform::from_translate(offset_x, offset_y)
                                     .post_scale(scale, scale);
-                                
+
                                 let mut pm = pixmap.as_mut();
                                 resvg::render(&tree, transform, &mut pm);
                                 let _ = pixmap.save_png(&out_path);
