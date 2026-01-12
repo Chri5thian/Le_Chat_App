@@ -39,4 +39,6 @@ MIT - See [LICENSE](LICENSE) file for details.
 - **Mistral Logo**: The Mistral AI logo used in this application is the property of Mistral AI. This project is not affiliated with, endorsed by, or connected to Mistral AI.
 - **Disclaimer**: This application is a wrapper that loads Mistral's web service. All AI responses and services are provided by Mistral AI.
 
-If you are a Mistral AI representative and have concerns about this project, please open an issue.
+**Note to Mistral AI:** If you have any concerns about this project, please feel free to open an issue. I'd also welcome the opportunity to discuss this work with your team.
+
+I created this wrapper because I've found desktop applications like ChatGPT and GitHub Copilot to be more practical and professional for daily use, offering benefits such as better system integration and local inference capabilities. As a European, I'm also mindful of the importance of supporting European AI companies in an landscape increasingly dominated by US and Chinese platforms. I hope this project might demonstrate the value of a native desktop experience for Le Chat users, and perhaps inspire consideration of an official desktop client in the future. I'd be honored to collaborate or contribute to such an effort if it aligns with your roadmap.
