@@ -1,0 +1,22 @@
+pkgbase = le-chat-app-git
+	pkgdesc = Unofficial desktop wrapper for Mistral AI's Le Chat (Tauri)
+	pkgver = 0.1.0.r0.g0000000
+	pkgrel = 1
+	url = https://github.com/Chri5thian/Le_Chat_App
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = rust
+	makedepends = cargo
+	makedepends = pkgconf
+	depends = webkit2gtk
+	depends = gtk3
+	depends = libayatana-appindicator
+	depends = openssl
+	depends = hicolor-icon-theme
+	provides = le-chat-app
+	conflicts = le-chat-app
+	source = Le_Chat_App::git+https://github.com/Chri5thian/Le_Chat_App.git
+	sha256sums = SKIP
+
+pkgname = le-chat-app-git

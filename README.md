@@ -20,6 +20,16 @@ Download the latest release:
 - **macOS**: `.dmg` (Intel & Apple Silicon)
 - **Linux**: `.deb` or `.rpm`
 
+### Arch Linux (AUR)
+
+Build locally from the included `PKGBUILD`:
+
+```bash
+makepkg -si
+```
+
+Once published to AUR, install via `yay -S le-chat-app-git`.
+
 ## Development
 
 **Prerequisites:**
