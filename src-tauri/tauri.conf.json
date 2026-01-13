@@ -38,7 +38,7 @@
     "linux": {
       "deb": {
         "depends": [],
-        "desktopTemplate": "Name=Le Chat\nExec={{app_exec}}\nIcon={{app_icon}}\nType=Application\nCategories=Network;Chat;\nTerminal=false\nStartupWMClass=le-chat"
+        "desktopTemplate": "le-chat.desktop"
       }
     }
   }
