@@ -39,6 +39,9 @@
       "deb": {
         "depends": [],
         "desktopTemplate": "le-chat.desktop"
+      },
+      "appimage": {
+        "bundleMediaFramework": true
       }
     }
   }
