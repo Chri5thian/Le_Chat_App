@@ -2,6 +2,8 @@
 
 A lightweight cross-platform desktop app for Mistral AI's Le Chat (https://chat.mistral.ai/chat) built with Tauri v2.
 
+![Le Chat Desktop Application](screenshot.png)
+
 > **Development Status:** This application is in early development and not fully mature. Some features may not work as expected, and external links (like Mistral Studio) will open in your default browser.
 
 ## Features
