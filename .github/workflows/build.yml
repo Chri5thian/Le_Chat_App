@@ -84,7 +84,7 @@ jobs:
           name: linux-${{ matrix.platform.target }}
           path: |
             target/${{ matrix.platform.target }}/release/bundle/deb/*.deb
-            target/${{ matrix.platform.target }}/release/bundle/appimage/*.AppImage
+            target/${{ matrix.platform.target }}/release/bundle/rpm/*.rpm
 
       - name: Upload artifacts (Windows)
         if: matrix.platform.os == 'windows-latest'
